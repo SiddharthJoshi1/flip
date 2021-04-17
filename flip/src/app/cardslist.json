@@ -1,0 +1,63 @@
+[
+    {
+        "ID": "CardJS1",
+        "Flipped": false,
+        "Image": "https://simpleicons.org/icons/javascript.svg"
+    },
+    {
+        "ID": "CardJS2",
+        "Flipped": false,
+        "Image": "https://simpleicons.org/icons/javascript.svg"
+    },
+    {
+        "ID": "CardJava1",
+        "Flipped": false,
+        "Image": "https://simpleicons.org/icons/java.svg"
+    },
+    {
+        "ID": "CardJava2",
+        "Flipped": false,
+        "Image": "https://simpleicons.org/icons/java.svg"
+    },
+    {
+        "ID": "CardHTML1",
+        "Flipped": false,
+        "Image": "https://simpleicons.org/icons/html5.svg"
+    },
+    {
+        "ID": "CardHTML2",
+        "Flipped": false,
+        "Image": "https://simpleicons.org/icons/html5.svg"
+    },
+    {
+        "ID": "CardCSS1",
+        "Flipped": false,
+        "Image": "https://simpleicons.org/icons/css3.svg"
+    },
+    {
+        "ID":"CardCSS2",
+        "Flipped": false,
+        "Image": "https://simpleicons.org/icons/css3.svg"
+    },
+    {
+        "ID": "CardAngular1",
+        "Flipped": false,
+        "Image": "https://simpleicons.org/icons/angular.svg"
+    },
+    {
+        "ID": "CardAngular2",
+        "Flipped": false,
+        "Image": "https://simpleicons.org/icons/angular.svg"
+    },
+    {
+        "ID":"Cardgit1",
+        "Flipped": false,
+        "Image": "https://simpleicons.org/icons/git.svg"
+    },
+    {
+        "ID":"Cardgit2",
+        "Flipped": false,
+        "Image": "https://simpleicons.org/icons/git.svg"
+    }
+
+]

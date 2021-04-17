@@ -1,2 +1,8 @@
+<body>
 <h1>Welcome to {{title}}</h1>
 <h2>This is a Card Memorizing game</h2>
+<mat-grid-list cols="4" rowHeight="2:1" >
+    <mat-grid-tile *ngFor='let card of cards'  (click)="onCardClicked($event)"><img src="{{card.Image}}" id="{{card.ID}}"width="100" height="100" hidden="{{card.Flipped}}" >
+    </mat-grid-tile>
+    </mat-grid-list>
+</body>
