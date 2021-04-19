@@ -9,13 +9,32 @@ import * as cards from './cardslist.json';
 })
 export class AppComponent {
   title = 'flip';
-  cards = (cards as any).default;
+  cards = this.shuffleCards((cards as any).default); //need to change this to shuffle
   CardImg1: string = '';
   CardImg2: string = '';
   CardID1 = '';
   CardID2 = '';
   Card1IsSet = false;
   Card2IsSet = false;
+
+  shuffleCards(cards){
+    var currentIndex = cards.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = cards[currentIndex];
+    cards[currentIndex] = cards[randomIndex];
+    cards[randomIndex] = temporaryValue;
+  }
+
+  return cards;
+  }
 
   resetVariables() {
     this.CardImg1 = '';
@@ -47,7 +66,7 @@ export class AppComponent {
     }
 
     setTimeout(() => {
-      if (this.CardImg1 === this.CardImg2) {
+      if (this.CardImg1 === this.CardImg2 && this.CardID1 !== this.CardID2) {
         document
           .getElementById(this.CardID1)
           ?.parentElement?.parentElement?.remove();
